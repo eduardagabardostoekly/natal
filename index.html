@@ -7,6 +7,12 @@
 <meta property="og:title" content="Personalizados de Natal">
 <meta property="og:description" content="Escolha a peça, escolha a arte e peça pelo WhatsApp.">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://SEU-USUARIO.github.io/SEU-REPO/">
+<meta property="og:image" content="https://SEU-USUARIO.github.io/SEU-REPO/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 1l3 7 7.5.7-5.7 5 1.8 7.3L12 17l-6.6 4 1.8-7.3-5.7-5L9 8z' fill='%23E0B050'/%3E%3C/svg%3E">
 <style>html{color-scheme:light;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Personalizados de Natal</title>
@@ -73,7 +79,7 @@ p{margin:0}
 .meta-strip b{color:var(--burgundy);font-weight:700}
 .collage{position:relative;aspect-ratio:1/1.05;width:100%;max-width:520px;margin-inline:auto}
 .collage .arch{position:absolute;left:10%;right:10%;top:4%;bottom:0;border-radius:999px 999px 18px 18px;background:var(--blush);box-shadow:inset 0 0 0 6px var(--paper),inset 0 0 0 8px var(--green)}
-.collage img{position:absolute;filter:drop-shadow(0 6px 8px rgba(70,35,30,.28));max-width:none}
+.collage img{height:auto;aspect-ratio:auto;object-fit:contain;position:absolute;filter:drop-shadow(0 6px 8px rgba(70,35,30,.28));max-width:none}
 .collage .k-sack{width:50%;left:7%;bottom:6%;transform:rotate(-4deg)}
 .collage .k-bottle{width:21%;right:9%;bottom:8%;transform:rotate(5deg)}
 .collage .k-eco{width:34%;right:18%;top:20%;transform:rotate(3deg);z-index:0}
@@ -252,6 +258,21 @@ footer p{margin-top:26px;color:rgba(255,252,246,.8)}
 .fab span{display:none}
 @media(min-width:700px){.fab span{display:inline}.fab{padding:0 20px 0 16px}}
 body.has-bar .fab{bottom:calc(92px + env(safe-area-inset-bottom,0px))}
+/* ---- hero mobile ---- */
+@media(max-width:600px){
+.hero{padding-block:84px 56px}
+.cta-row{flex-direction:column;gap:10px}
+.cta-row .btn{width:100%;justify-content:center;text-align:center}
+.meta-strip{flex-direction:column;gap:6px;font-size:14px;padding-top:16px;border-top:1px solid var(--line)}
+.meta-strip span{padding-left:16px;position:relative}
+.meta-strip span::before{content:"✦";position:absolute;left:0;color:var(--gold,#B8893A);font-size:11px;top:2px}
+.collage{aspect-ratio:1/1.2;max-width:400px}
+.collage .k-sack{width:52%;left:2%;bottom:3%}
+.collage .k-bottle{width:20%;right:3%;bottom:5%}
+.collage .k-eco{width:30%;right:20%;top:14%}
+.collage .k-star{width:20%;left:0;top:-4%}
+.collage .note{right:2%;top:2%;max-width:130px;font-size:15px}
+}
 </style>
 
 <header class="hero paper">
